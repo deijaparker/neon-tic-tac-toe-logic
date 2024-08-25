@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NeonGrid</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div>
+        <button onclick="playerIn()">Start</button>
+        <button onclick="restart()">Restart</button>
+      </div>
+      <div class="player1"></div>
+      <div class="player2"></div>
+    </div>
+
+    <div class="board">
+      <div class="column">
+        <div class="row1" id="box1">1</div>
+        <div class="row1" id="box2">2</div>
+        <div class="row1" id="box3">3</div>
+      </div>
+      <div class="column">
+        <div class="row2" id="box1">1</div>
+        <div class="row2" id="box2">2</div>
+        <div class="row2" id="box3">3</div>
+      </div>
+      <div class="column">
+        <div class="row3" id="box1">1</div>
+        <div class="row3" id="box2">2</div>
+        <div class="row3" id="box3">3</div>
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
