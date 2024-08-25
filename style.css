@@ -1,0 +1,128 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Screen styling */
+.screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  border: 2px solid #00d1ff;
+  border-radius: 15px;
+  background-color: #2e2e2e;
+  box-shadow: 0px 0px 15px 2px #00d1ff;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Player score display */
+.player1,
+.player2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+/* Board container */
+.board {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Column styling */
+.column {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Row and box styling */
+.row1,
+.row2,
+.row3 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00d1ff;
+  color: #00d1ff;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover and active state for boxes */
+.row1:hover,
+.row2:hover,
+.row3:hover {
+  background-color: #00d1ff;
+  color: #1e1e1e;
+  transform: scale(1.1);
+}
+
+.row1:active,
+.row2:active,
+.row3:active {
+  background-color: #00a7cc;
+}
+
+/* Button styling */
+button {
+  background-color: #00d1ff;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00a7cc;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #008c99;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .screen {
+    flex-direction: column;
+  }
+
+  .board {
+    margin: 1em 0;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
